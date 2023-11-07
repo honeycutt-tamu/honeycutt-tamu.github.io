@@ -1,0 +1,20 @@
+.section{
+  background-color: $primaryColor1;
+  font-size: 30px;
+  padding: 40px;
+  box-sizing: border-box;
+  @include respond('1000px'){
+    background-color: purple
+  };
+  @include respond('800px'){
+    background-color: red;
+    font-size: 30px;
+  };
+
+  li{
+    font-size: 16px;
+    @include respond('1200px'){
+      font-size: 30px;
+    };
+  }
+}
